@@ -3,9 +3,12 @@
 @section('title', 'Welcome')
 
 @section('main-content')
+<section class="container">
 
-            <h1>
-                Welcome
-            </h1>
+    <h1>
+        Click on the Trains menu to see the today's arrivals!
+    </h1>
+
+</section>
 
 @endsection

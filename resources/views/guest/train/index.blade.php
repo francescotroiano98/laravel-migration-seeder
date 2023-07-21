@@ -4,8 +4,12 @@
 
 
 @section('main-content')
+<section class="container">
 
-<h1>Trains departing today</h1>
+<h1 class="mb-4">Trains departing today:</h1>
+
+</section>
+
 
 <section class="container">
                 <div class="row">
