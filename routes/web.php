@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Guest\PageController as GuestPageController;
+use App\Http\Controllers\Guest\TrainController as GuestTrainController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('top-content');
-});
+Route::get('/', [GuestPageController::class, 'home'])->name('guest.home');
+Route::get('/train', [GuestTrainController::class, 'index'])->name('guest.train.index');
